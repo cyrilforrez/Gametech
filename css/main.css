@@ -1,0 +1,19 @@
+header {
+    padding: 5% 0;
+}
+
+article; {
+    padding-bottom: 6%;
+}
+
+form {
+    padding-bottom: 10%;
+}
+
+ul.list-group {
+    padding-bottom: 6%;
+}
+
+footer, header {
+    background-color: lightgrey;
+}
