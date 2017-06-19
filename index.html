@@ -49,10 +49,10 @@
     <main>
         <div class="container">
             <div class="row">
-                <h2>Archives pour Jeux</h2>
+                <h3>Archives pour Jeux</h3>
                 <div class="col-12">
                     <article>
-                        <img src="img/pc/android-lollipop.jpg" class="img-fluid" alt="">
+                        <img src="img/pc/android-lollipop.jpg" class="img-fluid" alt="lollipop">
                         <a href="">
                             <h2>Lollipop</h2>
                             <h3>Découvrez le jeu “Flappy bird-like” caché dans la nouvelle version d’Android</h3>
@@ -63,7 +63,7 @@
 
                 <div class="col-12">
                     <article>
-                        <img src="img/pc/grepolis.jpg" class="img-fluid" alt="">
+                        <img src="img/pc/grepolis.jpg" class="img-fluid" alt="grepolis">
                         <a href="">
                             <h2>Grepolis</h2>
                             <h3>le jeu par navigateur dédié à la Grèce antique</h3>
@@ -74,7 +74,7 @@
 
                 <div class="col-12">
                     <article>
-                        <img src="img/pc/Ingress.png" class="img-fluid" alt="">
+                        <img src="img/pc/Ingress.png" class="img-fluid" alt="ingress">
                         <a href="">
                             <h2>IngressLe jeu en réalité augmentée de Google</h2>
                             <h3>Le jeu en réalité augmentée de Google</h3>
@@ -85,13 +85,14 @@
 
                 <div class="col-12">
                     <article>
-                        <img src="img/pc/angry-birds.jpg" class="img-fluid" alt="">
+                        <img src="img/pc/angry-birds.jpg" class="img-fluid" alt="angry-birds">
                         <a href="">
                             <h2>Angry Birds Star WarsNouvel opus d’un jeu à succès</h2>
                             <h3>Nouvel opus d’un jeu à succès</h3>
                         </a>
                         <p>Demain un nouveau Angry Birds va être accessible. Ce sera une version Star Wars qui  intégrera tous les personnages principaux de la saga comme Luke Skywalker, R2 D2, Leia ou encore Dark Vador. Des nouveautés ? Il n'y ...</p>
                     </article>
+                    <p id="demo"></p>
                 </div>
             </div>
         </div>
@@ -155,6 +156,11 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    var d = new Date();
+    document.getElementById("demo").innerHTML = d.toUTCString();
+    </script>
 
 
         <script src="js/jquery-3.2.1.js"></script>
