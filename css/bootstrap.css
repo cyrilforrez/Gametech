@@ -548,7 +548,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
 }
 
 h4, .h4 {
@@ -5122,7 +5122,7 @@ a.badge:focus, a.badge:hover {
 
 .list-group-item-action {
   width: 100%;
-  color: black;
+  color: #464a4c;
   text-align: inherit;
 }
 
