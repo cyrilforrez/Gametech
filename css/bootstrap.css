@@ -760,6 +760,7 @@ pre code {
   margin-right: auto;
   padding-right: 15px;
   padding-left: 15px;
+  padding-bottom: 5%
 }
 
 @media (min-width: 576px) {
@@ -5121,7 +5122,7 @@ a.badge:focus, a.badge:hover {
 
 .list-group-item-action {
   width: 100%;
-  color: #464a4c;
+  color: black;
   text-align: inherit;
 }
 
@@ -5155,8 +5156,7 @@ a.badge:focus, a.badge:hover {
           align-items: center;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
-  background-color: #fff;
-  border: 1px solid rgba(0, 0, 0, 0.125);
+  background-color: transparent;
 }
 
 .list-group-item:first-child {
