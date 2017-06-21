@@ -19,3 +19,7 @@ ul.list-group {
 footer, header {
     background-color: lightgrey;
 }
+
+.hide {
+    display: none;
+}
