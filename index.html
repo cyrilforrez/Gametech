@@ -1,40 +1,230 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="fr">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
+        <title>GameTech</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css">
+        
+        
     </head>
     <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+    <header>
+        <div class="container">
+            <div class="row justify-content-center">
+                <button class="btn btn btn-sm" class="col-5" title="Accéder à mon compte">Se Connecter</button>
+                <div class=" col-7 input-group">
+                  <input type="text" class="form-control" placeholder="Search for...">
+                  <span class="input-group-btn">
+                    <button class="btn btn-secondary" type="button">Go!</button>
+                  </span>
+                </div>
+            </div>
+        </div>
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1 class="col-6 col-md-5">GameTech</h1>
+                <div class="btn-group hidden-lg-down" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-secondary">Navigation</button>
+                  <button onclick="funcAffiche(1)" type="button" class="btn btn-secondary">Accueil</button>
+                  <button type="button" class="btn btn-secondary">Actualité</button>
+                  <button type="button" class="btn btn-secondary">Apps</button>
+                  <button type="button" class="btn btn-secondary">Divers</button>
+                  <button type="button" class="btn btn-secondary">Innovation</button>
+                  <button onclick="funcAffiche(0)" type="button" class="btn btn-secondary">Jeux</button>
+                  <button type="button" class="btn btn-secondary">Logiciel</button>
+                  <button type="button" class="btn btn-secondary">Startup</button>
+                  <button type="button" class="btn btn-secondary">Test</button>
+                  <button type="button" class="btn btn-secondary">Tutoriels</button>
+                  <button type="button" class="btn btn-secondary">Vielle</button>
+                  <button type="button" class="btn btn-secondary">Blog</button>
+                  <button type="button" class="btn btn-secondary">#FUN</button>
+                </div>
+                <select class="col-11 hidden-lg-up" name="nav">
+                    <option>Navigation</option>
+                    <option onclick="funcAffiche(1)">Accueil</option>
+                    <option>Actualité</option>
+                    <option>Apps</option>
+                    <option>Divers</option>
+                    <option>Innovation</option>
+                    <option onclick="funcAffiche(0)">Jeux</option>
+                    <option>Logiciel</option>
+                    <option>Startup</option>
+                    <option>Test</option>
+                    <option>Tutoriels</option>
+                    <option>Vielle</option>
+                    <option>Blog</option>
+                    <option>#FUN</option>
+                </select>
+            </div>
+        </div>
+    </header>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='https://www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <article class="accueil">
+                        <img src="img/pc/energy-sistem.jpg" id="1" class="img-fluid" alt="energy-sistem">
+                        <a href="#">
+                            <h2>Energy Music Box 5</h2>
+                            <h3>La boite à son bluetooth au bon rapport qualité/prix</h3>
+                        </a>
+                        <p>Bonjour à tous ! Voici un second test d'un produit de chez Energy Sistem : L'energy music box 5. J'ai été plutôt séduit des produits du premier test avec le système multi-room même si j'avais ... </p>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="accueil">
+                        <img src="img/pc/Retropie.png" id="2" class="img-fluid" alt="Retropie">
+                        <a href="#">
+                            <h2>Construire une rétro-console très rapidement avec un Raspberry Pi et le système rétropie</h2>
+                        </a>
+                        <p>Bonjour à tous, aujourd'hui je vous propose un tutoriel simple et rapide pour vous construire votre propre rétro-console avec un Raspberry Pi et le système 'Rétropie'. Il y a pléthore de tutoriels sur le sujet donc ... </p>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="accueil">
+                        <img src="img/pc/test-enceintes.jpg" id="3" class="img-fluid" alt="enceintes">
+                        <a href="#">
+                            <h2>Test</h2>
+                            <h3>des enceintes multi-room d’Energy Sistem</h3>
+                        </a>
+                        <p>Bonjour à tous ! Je test pour vous aujourd'hui des enceintes venues tout droit du territoire espagnol de chez Energy Sistem. Cette entreprise commercialise des smartphones et des enceintes entre autre, toujours à des prix ... </p>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="accueil">
+                        <img src="img/pc/gatekeeper.jpg" id="4" class="img-fluid" alt="gatekeeper">
+                        <a href="#">
+                            <h2>GateKeeper</h2>
+                            <h3>Verrouiller / Déverrouiller votre PC en fonction de votre proximité</h3>
+                        </a>
+                        <p>Bonjour à tous, aujourd'hui je vous présente Gatekeeper, un dispositif qui gère les verrouillages et dé-verrouillages de votre session. J'ai testé ce produit pendant plusieurs semaines et voici ce que j'en pense. Description du produit et ... </p>
+                    </article>
+                    <p id="demo"></p>
+                </div>
+
+                <h4 class="jeux">Archives pour Jeux</h4>
+                <div class="col-12">
+                    <article class="jeux">
+                        <img src="img/pc/android-lollipop.jpg" id="5" class="img-fluid" alt="lollipop">
+                        <a href="#">
+                            <h2>Lollipop</h2>
+                            <h3>Découvrez le jeu “Flappy bird-like” caché dans la nouvelle version d’Android</h3>
+                        </a>
+                        <p>Vous avez certainement entendu parler de cette mise à jour Android 5.0 répondant au doux nom de 'Lollipop'. Certains l'ont déjà, d'autres l'auront bientôt alors soyez patients ça arrive ! Pour les heureux élus qui possèdent ...</p>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="jeux">
+                        <img src="img/pc/grepolis.jpg" id=6 class="img-fluid" alt="grepolis">
+                        <a href="#">
+                            <h2>Grepolis</h2>
+                            <h3>le jeu par navigateur dédié à la Grèce antique</h3>
+                        </a>
+                        <p>Alors que le célèbre salon du jeu vidéo Paris Games Week a fait un carton plein de son ouverture à sa fermeture avec les incidents qu'on connaît, en raison des jeux très attendus tels que Battlefield ...</p>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="jeux">
+                        <img src="img/pc/Ingress.png" id="7" class="img-fluid" alt="ingress">
+                        <a href="#">
+                            <h2>IngressLe jeu en réalité augmentée de Google</h2>
+                            <h3>Le jeu en réalité augmentée de Google</h3>
+                        </a>
+                        <p>Le pitch En Europe, une équipe de scientifiques a découvert une source d’énergie dont l’origine et l’utilité sont inconnues. Cependant, certains pensent qu’elle est capable d’influencer nos pensées. Bref il y a 2 camps : les Illuminés et la Résistance. L'un compte ...</p>
+                    </article>
+                </div>
+
+                <div class="col-12">
+                    <article class="jeux">
+                        <img src="img/pc/angry-birds.jpg" id="8" class="img-fluid" alt="angry-birds">
+                        <a href="#">
+                            <h2>Angry Birds Star WarsNouvel opus d’un jeu à succès</h2>
+                            <h3>Nouvel opus d’un jeu à succès</h3>
+                        </a>
+                        <p>Demain un nouveau Angry Birds va être accessible. Ce sera une version Star Wars qui  intégrera tous les personnages principaux de la saga comme Luke Skywalker, R2 D2, Leia ou encore Dark Vador. Des nouveautés ? Il n'y ...</p>
+                    </article>
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <h3>Abonnez vous !</h3>
+                    <p>Recevez nos dernières nouvelles directement dans votre boîte de réception ! (1 seule fois par semaine max) </p>
+                    <form action="">
+                    <input type="text" name="Prénom" title="Prénom" placeholder="Prénom">
+                    <input type="email" name="email" title="email" placeholder="Email">
+                    <input id="confirmer" type="submit" value="Je m'abonne!" onclick="confirm('Voulez vous confirmer ?')" ></form>
+                </div>
+            
+                <div class="col-12 col-lg-3">
+                    <h3>Les plus vus</h3>
+                    <ul class="list-group"><a href="#">
+                        <li class="list-group-item">8 sites pour trouver des images haute résolution libres de droits </li>
+                        <li class="list-group-item">Test du Sony A5000 - Hybride compact eton connecté </li>
+                        <li class="list-group-item">Doogee F7 pro - Que vaut ce smartphone chinois 10 coeurs ? </li>
+                        <li class="list-group-item">Test des écouteurs bluetooth Philips MyJam Freshtones </li>
+                        <li class="list-group-item">Transformez votre smartphone en scanner 3d (l'outil indispensable aux imprimantes 3d) </li>
+                        <li class="list-group-item">Des formulaires attrayants avec HTML5 et CSS3 </li>
+                    </a></ul>
+                </div>
+                <div class="col-12 col-lg-3">
+                    <h3>Les plus commentés</h3>
+                    <ul class="list-group"><a href="#">
+                        <li class="list-group-item">CONCOURS 4 ans de Technews.fr ça se fête ! (smartphone, écouteurs et enceinte à gagner) (74)</li>
+                        <li class="list-group-item">RaspberryPi - Comment faire un média-center complet avec RaspBMC (54)</li>
+                        <li class="list-group-item">RaspberryPi - Réaliser un serveur de stockage cloud avec Owncloud (40)</li>
+                        <li class="list-group-item">RaspberryPi - Déballage et premier démarrage, ce qu'il faut savoir. (15)</li>
+                        <li class="list-group-item">Google Inbox - 3 invitations à gagner pour tester l'application en avant première [TERMINÉ] (13)</li>
+                        <li class="list-group-item">Test du Ulefone Be Pro, un smartphone chinois 4G 5,5" à 200€ (13)</li>
+                    </a></ul>
+                </div>
+
+                <div class="col-12 col-lg-3">
+                    <h3>Catégories</h3>
+                    <ul class="list-group"><a href="#">
+                        <li class="list-group-item">#FUN (182) </li>
+                        <li class="list-group-item">Actualité (59) </li>
+                        <li class="list-group-item">Apps (2) </li>
+                        <li class="list-group-item">Blog (7) </li>
+                        <li class="list-group-item">Buzz (15) </li>
+                        <li class="list-group-item">Divers (35) </li>
+                        <li class="list-group-item">Innovation (61) </li>
+                        <li class="list-group-item">Jeux (7) </li>
+                        <li class="list-group-item">LéoDuff (2) </li>
+                        <li class="list-group-item">Logiciel (3) </li>
+                        <li class="list-group-item">Startup (13) </li>
+                        <li class="list-group-item">Téléphonie mobile (12) </li>
+                        <li class="list-group-item">Test (27) </li>
+                        <li class="list-group-item">Tutoriels (8) </li>
+                        <li class="list-group-item">Veille (18)</li>
+                    </a></ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <script src="js/main.js"></script>        
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/bootstrap.js"></script>
+
+
     </body>
 </html>
