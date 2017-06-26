@@ -29,11 +29,26 @@ function funcAffiche(x){
 
 }
 
+function imgOver(ti, x) {
+	var art = "art" + ti.id.substr(3);
+	var img = "img" + ti.id.substr(3);
+	if (x == 1) {
+		var alt = document.getElementById(img).alt;
+		document.getElementById(art).innerHTML = alt;
+	} else {
+		document.getElementById(art).innerHTML = "";
+	}
+}
+
+function testtemps() {
+    document.getElementById("test").innerHTML = parseInt(document.getElementById("test").innerHTML)+1;
+    setTimeout('testtemps()',1000);
+  }
 
 document.getElementById("confirmer").onclick = function()
 {
     confirm("Voulez vous confirmer ?");
  }
 
- document.getElementById("1").alt
+
  
